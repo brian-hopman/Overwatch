@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url('https://images7.alphacoders.com/675/thumb-1920-675990.jpg');
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+/* .overlay {
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(73, 27, 27, .5);
+  z-index: 1;
+} */
