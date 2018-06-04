@@ -17,8 +17,7 @@ export class HomeComponent implements OnInit {
 
   setSearchResults($event) {
     this.searchResults = $event;
-    console.log(this.searchResults)
-    debugger
+    console.log(this.searchResults);
   }
 
 }

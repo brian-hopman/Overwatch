@@ -1,3 +1,11 @@
-<ng-container>
-  <app-player-card *ngFor="let player of players"></app-player-card>
-</ng-container>
+<div *ngIf="player$ | async; let player; else loading">
+  <div *ngIf="player.username">
+    <h1>HAPPY BIRTHDAY! {{ player.username }}</h1>
+  </div>
+  <div *ngIf="!player.username">
+    <h1>BOO BOO BEE BOO</h1>
+  </div>
+</div>
+<ng-template #loading>
+  <h1>Loading...</h1>
+</ng-template>
