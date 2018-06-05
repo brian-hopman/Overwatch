@@ -1,5 +1,13 @@
 <div class="text-center">
-  <form class="form-group" [formGroup]="formGroup">
-    <input (keydown.enter)="onEnter()" formControlName="search">
+  <form class="form-inline" [formGroup]="formGroup">
+    <input class="search" (keydown.enter)="onEnter()" formControlName="search">
+    <select class="search select">
+      <option [value]="region">NA</option>
+      <option [value]="region">EU</option>
+      <option [value]="region">AS</option>
+    </select>
+    <button class="search" (click)="onEnter()">search</button>
   </form>
 </div>
+
+<h1 [hidden]="displayError" class='panic'>ULTRA BAD ERROR!!!!!!!</h1>
