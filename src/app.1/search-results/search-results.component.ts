@@ -22,4 +22,3 @@ export class SearchResultsComponent implements OnInit {
     // this.player$ = this.http.get(`http://localhost:3000/profile/pc/us/${this.route.snapshot.params['playerName']}`);
   }
 }
-

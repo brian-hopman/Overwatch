@@ -1,14 +1,15 @@
 <div *ngIf="player$ | async; let player; else loading">
-  <div *ngIf="false">
+  <div *ngIf="true">
     <app-player [player]="player"></app-player>
   </div>
-  <div *ngIf="true">
-    <div class="container-fluid">
-      <app-error-page></app-error-page>
+  <div *ngIf="!player">
+    <div class="cute">
+      <h1 style="color: red; font-size: 1000%;">
+        I CANT BELIEVE YOU'VE DONE THIS
+      </h1>
     </div>
   </div>
 </div>
-
 <ng-template #loading>
   <h1>Loading...</h1>
 </ng-template>

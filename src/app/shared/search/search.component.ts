@@ -14,7 +14,7 @@ export class SearchComponent implements OnInit {
   formGroup: FormGroup;
   region = 'NA';
   displayError = true;
-  //url = `http://localhost:3000/profile/pc/us/${this.formGroup.value.search}`;
+
 
   constructor(
     private formBuilder: FormBuilder,
