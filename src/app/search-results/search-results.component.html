@@ -1,8 +1,8 @@
 <div *ngIf="player$ | async; let player; else loading">
-  <div *ngIf="false">
+  <div *ngIf="true">
     <app-player [player]="player"></app-player>
   </div>
-  <div *ngIf="true">
+  <div *ngIf="false">
     <div class="container-fluid">
       <app-error-page></app-error-page>
     </div>
